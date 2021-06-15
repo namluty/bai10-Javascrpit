@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên tố</title>
+</head>
+<body>
+<script>
+/*    function testSNT(number) {
+        // let n = +prompt("Nhập số");
+        let check =true;
+        for (let i =2; i < number; i++) {
+            if (number%i==0){
+            check=false;
+            break;
+            }
+        }return(check);
+    }
+    //     if (check){
+    //         alert("Số Nguyên Tố")
+    //     } else {
+    //         alert("Không phải SNT")
+    //     }
+    // }
+    function testSSNT (m){
+        // let m = +prompt('Nhập số');
+        let dem = 0;
+        let h =2;
+            while(dem<m){
+                if (testSNT(h)){
+        document.write(h+"<br>");
+            dem++;
+        }
+            h++;
+            }
+        } */
+let ketqua ="";
+let soluong = +prompt("nhap vao so luong so nguyen to can hien thi");
+let dem = 0; let n = 2;
+while (dem<soluong){
+    for (j=2; j<n; j++){
+        if (n%j==0){
+            break;
+        }
+    }
+    if (j==n) {
+        ketqua+=j+" ";
+        dem+=1;
+    }
+    n+=1;
+}
+document.write(ketqua);
+</script>
+</body>
+</html>
